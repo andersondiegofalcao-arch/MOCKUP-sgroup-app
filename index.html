@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A2557">
+<title>Sgroup — Proteção Veicular Mutualista</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="stage">
+
+  <aside class="stage-brand">
+    <div class="lockup">
+      <img class="lockup-shield" src="img/logo.png" alt="Sgroup">
+      <div class="lockup-tx"><strong>Sgroup</strong><span>PROTEÇÃO VEICULAR MUTUALISTA</span></div>
+    </div>
+    <span class="stage-line"></span>
+    <div class="push-out" id="push-out">
+      <p class="push-out-empty" id="push-out-empty">As notificações de teste que você enviar aparecerão aqui e no celular. 📲</p>
+    </div>
+  </aside>
+
+  <div class="device">
+    <span class="cam"></span>
+    <div class="app">
+
+      <div class="statusbar">
+        <span id="sb-time">09:41</span>
+        <svg class="sb-icons" viewBox="0 0 58 14" width="58" height="14" fill="currentColor">
+          <rect x="0" y="8" width="2.5" height="5" rx="1"/><rect x="4" y="6" width="2.5" height="7" rx="1"/>
+          <rect x="8" y="4" width="2.5" height="9" rx="1"/><rect x="12" y="2" width="2.5" height="11" rx="1"/>
+          <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <path d="M21 6.5a8 8 0 0 1 10 0"/><path d="M23.2 9.2a5 5 0 0 1 5.6 0"/>
+          </g>
+          <circle cx="26" cy="11.6" r="1.5"/>
+          <rect x="37" y="2.5" width="16" height="9" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <rect x="39" y="4.5" width="10" height="5" rx="1"/>
+          <rect x="54.4" y="5.3" width="2" height="3.4" rx="1"/>
+        </svg>
+      </div>
+
+      <main class="screens">
+
+        <!-- ============ INÍCIO ============ -->
+        <section class="screen tab active" id="screen-home">
+          <div class="hero">
+            <div class="hero-top">
+              <div class="logo">
+                <img src="img/logo.png" alt="Sgroup">
+                <div><strong>Sgroup</strong><span>PROTEÇÃO VEICULAR MUTUALISTA</span></div>
+              </div>
+              <button class="icon-btn bell" data-go="screen-notifications" aria-label="Notificações">
+                <svg class="ic"><use href="#i-bell"/></svg><i class="dot"></i>
+              </button>
+            </div>
+            <h2>Olá, João!</h2>
+            <p>É um prazer ter você com a gente.</p>
+            <button class="vehicle-card" data-go="screen-vehicle">
+              <div class="vc-head">
+                <span class="pill pill-green"><svg class="ic-xs"><use href="#i-check-mini"/></svg>Proteção ativa</span>
+                <span class="pill pill-navy">Plano Essencial</span>
+              </div>
+              <div class="vc-body">
+                <div class="vc-info">
+                  <strong>Volkswagen T-Cross</strong>
+                  <span class="vc-sub">2023/2024 • 200 TSI Flex</span>
+                  <span class="plate">ABC1D23</span>
+                </div>
+                <img class="vc-art" src="img/tcross.png" alt="Volkswagen T-Cross">
+              </div>
+            </button>
+          </div>
+
+          <div class="content">
+            <button class="pay-card" data-go="screen-finance">
+              <span class="sq-ic"><svg class="ic"><use href="#i-calendar"/></svg></span>
+              <div class="row-tx"><small>Próxima contribuição • venc. 10/09/2026</small><strong>R$ 280,00</strong></div>
+              <span class="pill pill-green">Em dia</span>
+              <svg class="chev"><use href="#i-chev"/></svg>
+            </button>
+
+            <div class="row-cards">
+              <button class="mini-card" data-go="screen-assist">
+                <span class="sq-ic"><svg class="ic"><use href="#i-headset"/></svg></span>
+                <strong>Assistência 24h</strong><small>Guincho, pane e mais</small>
+              </button>
+              <button class="mini-card" data-go="screen-finance">
+                <span class="sq-ic"><svg class="ic"><use href="#i-receipt"/></svg></span>
+                <strong>2ª via de boleto</strong><small>Boletos e pagamentos</small>
+              </button>
+            </div>
+
+            <div class="sec-head"><h4>Destaques para você</h4></div>
+            <div class="promo-scroll">
+              <button class="promo promo-gold" data-toast="Convite enviado! Indique e ganhe R$ 50 (demonstração)">
+                <svg class="promo-art"><use href="#i-gift"/></svg>
+                <span class="promo-tag">Indique e ganhe</span>
+                <strong>Ganhe R$ 50 por amigo indicado</strong>
+                <small>Convide quem você gosta e ganhe desconto na contribuição.</small>
+                <span class="promo-cta">Indicar agora</span>
+              </button>
+              <button class="promo promo-blue" data-toast="Clube de benefícios (demonstração)">
+                <svg class="promo-art"><use href="#i-star"/></svg>
+                <span class="promo-tag">Clube de benefícios</span>
+                <strong>Até 30% off em parceiros</strong>
+                <small>Postos, lava-rápidos e estacionamentos credenciados.</small>
+                <span class="promo-cta">Ver parceiros</span>
+              </button>
+              <button class="promo promo-green" data-toast="Promoção 2º veículo (demonstração)">
+                <svg class="promo-art"><use href="#i-car"/></svg>
+                <span class="promo-tag">Promoção</span>
+                <strong>2º veículo com 20% off na adesão</strong>
+                <small>Proteja todos os carros da família.</small>
+                <span class="promo-cta">Aproveitar</span>
+              </button>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- ============ MEU VEÍCULO ============ -->
+        <section class="screen tab" id="screen-vehicle">
+          <header class="appbar"><h3>Meu veículo</h3></header>
+          <div class="content">
+            <div class="car-showcase">
+              <img src="img/tcross.png" alt="Volkswagen T-Cross">
+              <div class="show-row">
+                <span class="vw-mark"><svg><use href="#i-vw"/></svg></span>
+                <span class="plate plate-lg">ABC1D23</span>
+                <span class="fipe-tag">FIPE R$ 128.459</span>
+              </div>
+            </div>
+            <div class="card list-kv">
+              <div class="kv"><span>Marca</span><strong>Volkswagen</strong></div>
+              <div class="kv"><span>Modelo</span><strong>T-Cross 200 TSI</strong></div>
+              <div class="kv"><span>Ano / Modelo</span><strong>2023 / 2024</strong></div>
+              <div class="kv"><span>Renavam</span><strong>12345678901</strong></div>
+              <div class="kv"><span>Chassi</span><strong>9BWAG45N0RT123456</strong></div>
+              <div class="kv"><span>Combustível</span><strong>Flex</strong></div>
+              <div class="kv"><span>Código FIPE</span><strong>005510-7</strong></div>
+              <div class="kv"><span>Valor FIPE</span><strong class="hi">R$ 128.459,00</strong></div>
+              <div class="kv"><span>Data de adesão</span><strong>15/03/2024</strong></div>
+            </div>
+            <div class="sec-head"><h4>Coberturas contratadas</h4></div>
+            <div class="card list-kv">
+              <div class="cover"><span>Roubo e furto</span><svg class="ok"><use href="#i-check"/></svg></div>
+              <div class="cover"><span>Colisão, incêndio e danos naturais</span><svg class="ok"><use href="#i-check"/></svg></div>
+              <div class="cover"><span>Assistência 24h</span><svg class="ok"><use href="#i-check"/></svg></div>
+              <div class="cover"><span>Vidros, faróis e retrovisores</span><svg class="ok"><use href="#i-check"/></svg></div>
+              <div class="cover"><span>Carro reserva (7 dias)</span><svg class="ok"><use href="#i-check"/></svg></div>
+            </div>
+            <div class="sec-head"><h4>Condutores autorizados</h4></div>
+            <div class="card tight">
+              <div class="row"><span class="avatar sm">JS</span><div class="row-tx"><strong>João Silva</strong><small>Titular</small></div></div>
+              <div class="row"><span class="avatar sm alt">MS</span><div class="row-tx"><strong>Marina Silva</strong><small>Condutora adicional</small></div></div>
+            </div>
+            <button class="btn-outline" data-doc="Certificado de proteção"><svg class="bic"><use href="#i-doc"/></svg>Ver certificado de proteção</button>
+          </div>
+        </section>
+
+        <!-- ============ ASSISTÊNCIA 24H ============ -->
+        <section class="screen tab" id="screen-assist">
+          <header class="appbar"><h3>Assistência 24h</h3></header>
+          <div class="content">
+            <div class="card-navy assist-hero">
+              <span class="halo"><svg class="ic-lg"><use href="#i-headset"/></svg></span>
+              <h3>Precisa de ajuda?</h3>
+              <p>Conte com a Sgroup onde você estiver.<br>Atendimento 24 horas, todos os dias.</p>
+            </div>
+            <div class="card loc-card">
+              <span class="sq-ic"><svg class="ic"><use href="#i-pin"/></svg></span>
+              <div class="row-tx"><small>Localização atual</small><strong>Av. Eng. Santana Júnior, 3000</strong><small>Fortaleza • CE</small></div>
+              <button class="link" data-toast="Busca de endereço (demonstração)">Alterar</button>
+            </div>
+            <button class="btn-primary" id="btn-request"><svg class="bic"><use href="#i-headset"/></svg>Solicitar assistência</button>
+            <div class="sec-head"><h4>Tipos de assistência</h4></div>
+            <div class="card tight">
+              <button class="row" data-assist="Guincho"><span class="sq-ic"><svg class="ic"><use href="#i-tow"/></svg></span><div class="row-tx"><strong>Guincho</strong><small>Reboque em até 200 km</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-assist="Pane mecânica"><span class="sq-ic"><svg class="ic"><use href="#i-wrench"/></svg></span><div class="row-tx"><strong>Pane mecânica</strong><small>Socorro no local</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-assist="Pane elétrica"><span class="sq-ic"><svg class="ic"><use href="#i-bolt"/></svg></span><div class="row-tx"><strong>Pane elétrica</strong><small>Bateria e sistema elétrico</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-assist="Troca de pneu"><span class="sq-ic"><svg class="ic"><use href="#i-tire"/></svg></span><div class="row-tx"><strong>Troca de pneu</strong><small>Estepe e reparos</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-assist="Chaveiro 24h"><span class="sq-ic"><svg class="ic"><use href="#i-key"/></svg></span><div class="row-tx"><strong>Chaveiro 24h</strong><small>Abertura e confecção de chaves</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-assist="Pane seca"><span class="sq-ic"><svg class="ic"><use href="#i-drop"/></svg></span><div class="row-tx"><strong>Pane seca</strong><small>Reabastecimento emergencial</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-assist="Acidente"><span class="sq-ic amber"><svg class="ic"><use href="#i-alert"/></svg></span><div class="row-tx"><strong>Acidente</strong><small>Suporte completo no local</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+            </div>
+            <p class="hint">Tempo médio de chegada: 32 min • Satisfação de 98%</p>
+          </div>
+        </section>
+
+        <!-- ============ ACOMPANHAMENTO ============ -->
+        <section class="screen stack" id="screen-tracking">
+          <header class="appbar has-back">
+            <button class="icon-btn" data-back aria-label="Voltar"><svg class="ic"><use href="#i-back"/></svg></button>
+            <h3>Acompanhamento</h3>
+          </header>
+          <div class="content">
+            <div class="track-head">
+              <div><small>Protocolo</small><strong id="track-protocol">#4587-2026</strong></div>
+              <span class="pill pill-green" id="track-status">Em andamento</span>
+            </div>
+            <div class="card">
+              <div class="track-type">
+                <span class="sq-ic" id="track-ic"><svg class="ic"><use href="#i-tow"/></svg></span>
+                <div class="row-tx"><strong id="track-type">Guincho</strong><small>Auto Socorro Fortaleza</small></div>
+              </div>
+              <div class="map">
+                <svg viewBox="0 0 340 190" preserveAspectRatio="xMidYMid slice">
+                  <rect width="340" height="190" fill="#E8EFF7"/>
+                  <rect x="246" y="14" width="82" height="60" rx="12" fill="#DDEEE0"/>
+                  <rect x="16" y="18" width="38" height="28" rx="7" fill="#DFE7F2"/>
+                  <rect x="118" y="150" width="54" height="28" rx="7" fill="#DFE7F2"/>
+                  <rect x="210" y="150" width="40" height="28" rx="7" fill="#DFE7F2"/>
+                  <g stroke="#FFFFFF" stroke-width="10" stroke-linecap="round">
+                    <path d="M-10 60 H350"/><path d="M-10 130 H350"/>
+                    <path d="M70 -10 V200"/><path d="M180 -10 V200"/><path d="M270 -10 V200"/>
+                  </g>
+                  <g stroke="#F3F7FC" stroke-width="4"><path d="M-10 95 H350"/><path d="M125 -10 V200"/></g>
+                  <path d="M70 168 L70 130 L180 130 L180 60 L270 60" fill="none" stroke="#BFD5F7" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path class="route" d="M70 168 L70 130 L180 130 L180 60 L270 60" fill="none" stroke="#2563EB" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="70" cy="168" r="7" fill="#2563EB" stroke="#fff" stroke-width="3"/>
+                  <circle cx="270" cy="60" r="9" fill="#16A34A" stroke="#fff" stroke-width="3"/>
+                  <circle cx="270" cy="60" r="3" fill="#fff"/>
+                  <circle r="8" fill="#0A2557" stroke="#fff" stroke-width="3">
+                    <animateMotion dur="16s" repeatCount="indefinite" path="M70 168 L70 130 L180 130 L180 60 L270 60"/>
+                  </circle>
+                </svg>
+              </div>
+              <div class="track-stats">
+                <div class="stat"><svg class="ic-sm"><use href="#i-clock"/></svg><strong id="track-eta">25 min</strong><small>Chegada</small></div>
+                <div class="stat"><svg class="ic-sm"><use href="#i-nav"/></svg><strong>7,2 km</strong><small>Distância</small></div>
+                <div class="stat"><svg class="ic-sm"><use href="#i-star"/></svg><strong>4,9</strong><small>Carlos Silva</small></div>
+              </div>
+            </div>
+            <div class="card steps" id="track-steps">
+              <div class="step done"><span class="step-dot"><svg><use href="#i-check-mini"/></svg></span><div class="row-tx"><strong>Solicitação recebida</strong><small>14:32</small></div></div>
+              <div class="step current"><span class="step-dot"><svg><use href="#i-check-mini"/></svg></span><div class="row-tx"><strong>Prestador acionado</strong><small>14:35</small></div></div>
+              <div class="step"><span class="step-dot"><svg><use href="#i-check-mini"/></svg></span><div class="row-tx"><strong>A caminho do local</strong><small>—</small></div></div>
+              <div class="step"><span class="step-dot"><svg><use href="#i-check-mini"/></svg></span><div class="row-tx"><strong>Atendimento concluído</strong><small>—</small></div></div>
+            </div>
+            <button class="card call-card" data-toast="Ligando para Auto Socorro Fortaleza… (demonstração)">
+              <span class="sq-ic green"><svg class="ic"><use href="#i-phone"/></svg></span>
+              <div class="row-tx"><strong>Falar com o prestador</strong><small>Auto Socorro Fortaleza</small></div>
+              <svg class="chev"><use href="#i-chev"/></svg>
+            </button>
+            <button class="btn-danger-outline" id="btn-cancel">Cancelar solicitação</button>
+          </div>
+        </section>
+
+        <!-- ============ COMUNICAR EVENTO ============ -->
+        <section class="screen stack" id="screen-event">
+          <header class="appbar has-back">
+            <button class="icon-btn" data-back aria-label="Voltar"><svg class="ic"><use href="#i-back"/></svg></button>
+            <h3>Comunicar evento</h3>
+          </header>
+          <div class="content">
+            <p class="lead">O que aconteceu? Selecione o tipo de evento para iniciar o registro.</p>
+            <div class="grid3">
+              <button class="etype" data-ev="Acidente"><span class="sq-ic amber"><svg class="ic"><use href="#i-alert"/></svg></span>Acidente</button>
+              <button class="etype" data-ev="Roubo / Furto"><span class="sq-ic"><svg class="ic"><use href="#i-lock"/></svg></span>Roubo / Furto</button>
+              <button class="etype" data-ev="Incêndio"><span class="sq-ic amber"><svg class="ic"><use href="#i-fire"/></svg></span>Incêndio</button>
+              <button class="etype" data-ev="Danos ao veículo"><span class="sq-ic"><svg class="ic"><use href="#i-car"/></svg></span>Danos ao veículo</button>
+              <button class="etype" data-ev="Fenômenos naturais"><span class="sq-ic"><svg class="ic"><use href="#i-storm"/></svg></span>Fenômenos naturais</button>
+              <button class="etype" data-ev="Outros"><span class="sq-ic"><svg class="ic"><use href="#i-dots"/></svg></span>Outros</button>
+            </div>
+            <div class="sec-head"><h4>Registre os detalhes</h4></div>
+            <textarea id="ev-desc" class="field" rows="3" placeholder="Descreva o que aconteceu…"></textarea>
+            <div class="card tight">
+              <button class="row attach" id="att-photo"><span class="sq-ic"><svg class="ic"><use href="#i-camera"/></svg></span><div class="row-tx"><strong>Tirar foto</strong><small>Nenhuma foto adicionada</small></div><svg class="mark-add"><use href="#i-plus"/></svg><svg class="mark-ok"><use href="#i-check-mini"/></svg></button>
+              <button class="row attach" id="att-doc"><span class="sq-ic"><svg class="ic"><use href="#i-clip"/></svg></span><div class="row-tx"><strong>Anexar documentos</strong><small>Nenhum documento anexado</small></div><svg class="mark-add"><use href="#i-plus"/></svg><svg class="mark-ok"><use href="#i-check-mini"/></svg></button>
+              <button class="row attach" id="att-loc"><span class="sq-ic"><svg class="ic"><use href="#i-pin"/></svg></span><div class="row-tx"><strong>Enviar localização</strong><small>Usar minha localização atual</small></div><svg class="mark-add"><use href="#i-plus"/></svg><svg class="mark-ok"><use href="#i-check-mini"/></svg></button>
+            </div>
+            <button class="btn-primary disabled" id="btn-send-event">Enviar evento</button>
+            <p class="hint">Seu registro é analisado pela nossa equipe em até 24h úteis.</p>
+          </div>
+        </section>
+
+        <!-- ============ FINANCEIRO ============ -->
+        <section class="screen tab" id="screen-finance">
+          <header class="appbar"><h3>Financeiro</h3></header>
+          <div class="content">
+            <button class="card-navy score-card" data-go="screen-score">
+              <div class="score-head">
+                <span class="pill pill-green"><svg class="ic-xs"><use href="#i-check-mini"/></svg>Contribuições em dia</span>
+                <span class="score-lvl">🔥 Nível Turbo</span>
+              </div>
+              <div class="gauge-wrap">
+                <svg id="gauge" viewBox="0 0 220 150"></svg>
+                <div class="score-center"><strong id="score-num">870</strong><small>de 1.000 pts</small></div>
+              </div>
+              <div class="score-foot"><span>Pague em dia e acelere seus pontos • toque para ver seus benefícios</span><svg class="chev"><use href="#i-chev"/></svg></div>
+            </button>
+            <div class="card">
+              <div class="fin-row">
+                <div><small>Contribuição atual • Setembro/2026</small><strong class="money">R$ 280,00</strong><small>Vencimento 10/09/2026</small></div>
+                <span class="pill pill-amber">Em aberto</span>
+              </div>
+              <div class="fin-actions">
+                <button class="btn-primary slim" id="btn-pix"><svg class="bic"><use href="#i-pix"/></svg>Pagar com PIX</button>
+                <button class="btn-ghost slim" data-toast="2ª via enviada para o seu e-mail (demonstração)">2ª via do boleto</button>
+              </div>
+            </div>
+            <div class="sec-head"><h4>Histórico de contribuições</h4><button class="link" data-toast="Histórico completo (demonstração)">Ver tudo</button></div>
+            <div class="card tight">
+              <div class="hist"><span>Ago/2026</span><span class="pill pill-green">Pago</span><strong>R$ 280,00</strong></div>
+              <div class="hist"><span>Jul/2026</span><span class="pill pill-green">Pago</span><strong>R$ 280,00</strong></div>
+              <div class="hist"><span>Jun/2026</span><span class="pill pill-green">Pago</span><strong>R$ 280,00</strong></div>
+              <div class="hist"><span>Mai/2026</span><span class="pill pill-green">Pago</span><strong>R$ 265,00</strong></div>
+            </div>
+            <div class="card tight">
+              <button class="row" data-toast="Formas de pagamento (demonstração)"><span class="sq-ic"><svg class="ic"><use href="#i-cardpay"/></svg></span><div class="row-tx"><strong>Formas de pagamento</strong><small>PIX, boleto e cartão</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <div class="row"><span class="sq-ic"><svg class="ic"><use href="#i-refresh"/></svg></span><div class="row-tx"><strong>Débito automático</strong><small>Cartão •••• 4712</small></div><label class="switch"><input type="checkbox" id="sw-debit" checked><i></i></label></div>
+              <button class="row" data-toast="Notas fiscais (demonstração)"><span class="sq-ic"><svg class="ic"><use href="#i-receipt"/></svg></span><div class="row-tx"><strong>Notas fiscais</strong><small>Últimos 12 meses</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ SGROUP SCORE ============ -->
+        <section class="screen stack" id="screen-score">
+          <header class="appbar has-back">
+            <button class="icon-btn" data-back aria-label="Voltar"><svg class="ic"><use href="#i-back"/></svg></button>
+            <h3>Sgroup Score</h3>
+          </header>
+          <div class="content">
+            <div class="card-navy score-hero">
+              <span class="score-big">870</span>
+              <span class="score-sub">de 1.000 pontos</span>
+              <span class="pill pill-fire">🔥 Nível Turbo</span>
+              <div class="lvl-bar"><i style="width:87%"></i></div>
+              <small class="lvl-next">Faltam <strong>130 pts</strong> para o nível <strong>MAJOR</strong></small>
+            </div>
+
+            <div class="sec-head"><h4>O que seus pontos liberam</h4></div>
+            <p class="lead">A partir de <strong>500 pontos</strong>, cada nível libera um novo benefício para quem mantém as contribuições em dia:</p>
+            <div class="card tight">
+              <div class="row"><span class="pts-badge on">500</span><div class="row-tx"><strong>5% de desconto na próxima contribuição</strong><small>Resgate aplicado direto na fatura do mês</small></div><span class="pill pill-green">Ativo</span></div>
+              <div class="row"><span class="pts-badge on">600</span><div class="row-tx"><strong>Cashback de R$ 20 por indicação</strong><small>Crédito a cada amigo aprovado na Sgroup</small></div><span class="pill pill-green">Ativo</span></div>
+              <div class="row"><span class="pts-badge on">700</span><div class="row-tx"><strong>Guincho estendido até 300 km</strong><small>100 km extras sem custo adicional</small></div><span class="pill pill-green">Ativo</span></div>
+              <div class="row"><span class="pts-badge on">800</span><div class="row-tx"><strong>Carro reserva por 15 dias</strong><small>O dobro do prazo do plano Essencial</small></div><span class="pill pill-green">Ativo</span></div>
+              <div class="row lock"><span class="pts-badge">900</span><div class="row-tx"><strong>10% de desconto na contribuição anual</strong><small>Continue em dia para desbloquear</small></div><span class="pill pill-amber">Em breve</span></div>
+              <div class="row lock"><span class="pts-badge">1000</span><div class="row-tx"><strong>Clube MAJOR: sorteio de 1 ano grátis</strong><small>O nível máximo da mutualidade + brindes exclusivos</small></div><span class="pill pill-amber">Em breve</span></div>
+            </div>
+
+            <div class="sec-head"><h4>Como acelerar seus pontos</h4></div>
+            <div class="card tight">
+              <div class="row"><span class="sq-ic green"><svg class="ic"><use href="#i-check"/></svg></span><div class="row-tx"><strong>Pagar contribuições em dia</strong><small>+50 pts por mês</small></div></div>
+              <div class="row"><span class="sq-ic"><svg class="ic"><use href="#i-refresh"/></svg></span><div class="row-tx"><strong>Manter o débito automático ativo</strong><small>+20 pts por mês</small></div></div>
+              <div class="row"><span class="sq-ic"><svg class="ic"><use href="#i-users"/></svg></span><div class="row-tx"><strong>Indicar amigos aprovados</strong><small>+100 pts por indicação</small></div></div>
+              <div class="row"><span class="sq-ic"><svg class="ic"><use href="#i-shield"/></svg></span><div class="row-tx"><strong>Período sem eventos</strong><small>+30 pts por mês</small></div></div>
+            </div>
+
+            <div class="card note-card">
+              <svg class="ic"><use href="#i-alert"/></svg>
+              <p><strong>Pagamentos em dia são a chave.</strong> Atrasos reduzem o seu score e pausam os benefícios até a regularização.</p>
+            </div>
+            <button class="btn-primary" data-toast="Desconto de 5% aplicado na próxima contribuição ✓ (demonstração)">Resgatar desconto de 5%</button>
+          </div>
+        </section>
+
+        <!-- ============ MINHA MUTUALIDADE ============ -->
+        <section class="screen stack" id="screen-mutual">
+          <header class="appbar has-back">
+            <button class="icon-btn" data-back aria-label="Voltar"><svg class="ic"><use href="#i-back"/></svg></button>
+            <h3>Minha Mutualidade</h3>
+          </header>
+          <div class="content">
+            <div class="card-navy mutual-hero">
+              <svg class="mh-shield" viewBox="0 0 48 48"><use href="#logo-shield"/></svg>
+              <h3>Juntos somos mais fortes</h3>
+              <p>A Sgroup é uma associação mutualista, onde os associados se protegem por meio da cooperação.</p>
+            </div>
+            <div class="grid2">
+              <div class="card stat-card"><small>Associados</small><strong>18.642</strong><span class="trend">+12% em 12 meses</span></div>
+              <div class="card stat-card"><small>Assistências realizadas</small><strong>3.256</strong><span class="trend g">últimos 12 meses</span></div>
+              <div class="card stat-card"><small>Eventos indenizados</small><strong>1.204</strong><span class="trend g">últimos 12 meses</span></div>
+              <div class="card stat-card"><small>Índice de rateio</small><strong>32,7%</strong><span class="trend g">média do período</span></div>
+            </div>
+            <div class="card fund-card">
+              <div class="row-tx"><small>Fundo mutualista</small><strong class="money">R$ 28,4 mi</strong><small>em reservas para proteger você</small></div>
+              <div class="bars"><i style="height:32%"></i><i style="height:44%"></i><i style="height:40%"></i><i style="height:58%"></i><i style="height:70%"></i><i class="hi" style="height:88%"></i></div>
+            </div>
+            <div class="card note-card">
+              <svg class="ic"><use href="#i-shield"/></svg>
+              <p><strong>Transparência é o nosso compromisso.</strong> Gestão responsável para garantir a sua proteção hoje e no futuro.</p>
+            </div>
+            <button class="btn-outline" data-doc="Regulamento mutualista">Saiba como funciona</button>
+          </div>
+        </section>
+
+        <!-- ============ DOCUMENTOS ============ -->
+        <section class="screen stack" id="screen-docs">
+          <header class="appbar has-back">
+            <button class="icon-btn" data-back aria-label="Voltar"><svg class="ic"><use href="#i-back"/></svg></button>
+            <h3>Documentos</h3>
+          </header>
+          <div class="content">
+            <div class="card tight">
+              <button class="row" data-doc="Termo de adesão"><span class="sq-ic"><svg class="ic"><use href="#i-doc"/></svg></span><div class="row-tx"><strong>Termo de adesão</strong><small>Assinado em 15/03/2024</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-doc="Regulamento mutualista"><span class="sq-ic"><svg class="ic"><use href="#i-doc"/></svg></span><div class="row-tx"><strong>Regulamento mutualista</strong><small>Versão 2026.1</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-doc="Manual do associado"><span class="sq-ic"><svg class="ic"><use href="#i-doc"/></svg></span><div class="row-tx"><strong>Manual do associado</strong><small>Guia completo de uso</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-doc="Certificado de proteção"><span class="sq-ic green"><svg class="ic"><use href="#i-shield"/></svg></span><div class="row-tx"><strong>Certificado de proteção</strong><small>Vigente</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-doc="Comunicados"><span class="sq-ic"><svg class="ic"><use href="#i-msg"/></svg></span><div class="row-tx"><strong>Comunicados</strong><small>2 novos comunicados</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-doc="Boletos"><span class="sq-ic"><svg class="ic"><use href="#i-receipt"/></svg></span><div class="row-tx"><strong>Boletos</strong><small>2ª via e histórico</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-doc="Documentos do veículo"><span class="sq-ic"><svg class="ic"><use href="#i-car"/></svg></span><div class="row-tx"><strong>Documentos do veículo</strong><small>CRLV digital</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+            </div>
+          </div>
+        </section>
+
+        <!-- ============ PERFIL / MAIS ============ -->
+        <section class="screen tab" id="screen-more">
+          <header class="appbar"><h3>Perfil</h3></header>
+          <div class="content">
+            <div class="card profile-card">
+              <span class="avatar lg">JS</span>
+              <div class="row-tx"><strong>João Silva</strong><small>(85) 99999-1234</small><small>joao.silva@email.com</small></div>
+              <button class="link" data-toast="Edição de perfil (demonstração)">Editar</button>
+            </div>
+            <div class="card tight">
+              <button class="row" data-toast="Meus dados (demonstração)"><span class="sq-ic"><svg class="ic"><use href="#i-user"/></svg></span><div class="row-tx"><strong>Meus dados</strong><small>Informações pessoais</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-go="screen-vehicle"><span class="sq-ic"><svg class="ic"><use href="#i-car"/></svg></span><div class="row-tx"><strong>Meus veículos</strong><small>1 veículo protegido</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-go="screen-docs"><span class="sq-ic"><svg class="ic"><use href="#i-doc"/></svg></span><div class="row-tx"><strong>Documentos</strong><small>Contratos e certificados</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+              <button class="row" data-toast="Convite enviado! (demonstração)"><span class="sq-ic green"><svg class="ic"><use href="#i-gift"/></svg></span><div class="row-tx"><strong>Indicar amigos</strong><small>Convide e ganhe benefícios</small></div><span class="pill pill-green">Ganhe R$ 50</span></button>
+              <button class="row" data-go="screen-notifications"><span class="sq-ic"><svg class="ic"><use href="#i-msg"/></svg></span><div class="row-tx"><strong>Central de mensagens</strong><small>Comunicados e avisos</small></div><span class="badge">3</span></button>
+              <button class="row" data-toast="Ajuda e suporte (demonstração)"><span class="sq-ic"><svg class="ic"><use href="#i-help"/></svg></span><div class="row-tx"><strong>Ajuda e suporte</strong><small>Fale com a gente</small></div><svg class="chev"><use href="#i-chev"/></svg></button>
+            </div>
+            <button class="btn-danger-outline" id="btn-logout"><svg class="bic"><use href="#i-out"/></svg>Sair da conta</button>
+            <p class="version">Sgroup • Proteção Veicular Mutualista<br>Versão 2.4.1 — mockup de demonstração</p>
+          </div>
+        </section>
+
+        <!-- ============ NOTIFICAÇÕES ============ -->
+        <section class="screen stack" id="screen-notifications">
+          <header class="appbar has-back">
+            <button class="icon-btn" data-back aria-label="Voltar"><svg class="ic"><use href="#i-back"/></svg></button>
+            <h3>Notificações</h3>
+            <button class="link" data-toast="Todas as notificações foram lidas ✓">Marcar lidas</button>
+          </header>
+          <div class="content">
+            <div class="card tight">
+              <div class="row"><span class="sq-ic green"><svg class="ic"><use href="#i-check"/></svg></span><div class="row-tx"><strong>Contribuição confirmada</strong><small>Pagamento de Ago/2026 recebido.</small></div><span class="when">2 d</span></div>
+              <div class="row"><span class="sq-ic"><svg class="ic"><use href="#i-tow"/></svg></span><div class="row-tx"><strong>Assistência concluída</strong><small>Guincho finalizado com sucesso. Avalie o atendimento.</small></div><span class="when">5 d</span></div>
+              <div class="row"><span class="sq-ic"><svg class="ic"><use href="#i-users"/></svg></span><div class="row-tx"><strong>Novo comunicado</strong><small>Assembleia geral: resultados publicados.</small></div><span class="when">1 sem</span></div>
+              <div class="row"><span class="sq-ic green"><svg class="ic"><use href="#i-gift"/></svg></span><div class="row-tx"><strong>Indique e ganhe</strong><small>Convide amigos e ganhe R$ 50 por adesão.</small></div><span class="when">2 sem</span></div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- ============ TAB BAR ============ -->
+      <nav class="tabbar">
+        <button class="tab-btn active" data-tab="screen-home" data-go="screen-home"><span class="tab-ic"><svg><use href="#i-home"/></svg></span><span>Início</span></button>
+        <button class="tab-btn" data-tab="screen-vehicle" data-go="screen-vehicle"><span class="tab-ic"><svg><use href="#i-car"/></svg></span><span>Veículo</span></button>
+        <button class="tab-btn" data-tab="screen-assist" data-go="screen-assist"><span class="tab-ic"><svg><use href="#i-headset"/></svg></span><span>Assistência</span></button>
+        <button class="tab-btn" data-tab="screen-finance" data-go="screen-finance"><span class="tab-ic"><svg><use href="#i-dollar"/></svg></span><span>Financeiro</span></button>
+        <button class="tab-btn" data-tab="screen-more" data-go="screen-more"><span class="tab-ic"><svg><use href="#i-menu"/></svg></span><span>Mais</span></button>
+      </nav>
+
+      <!-- ============ SHEET: SOLICITAR ASSISTÊNCIA ============ -->
+      <div class="sheet" id="sheet-assist">
+        <div class="sheet-card">
+          <span class="grab"></span>
+          <h3>Solicitar assistência</h3>
+          <p class="sheet-sub">Confirme os dados para acionar o atendimento.</p>
+          <div class="chips" id="assist-chips">
+            <button class="chip sel" data-type="Guincho" data-ic="i-tow">Guincho</button>
+            <button class="chip" data-type="Pane mecânica" data-ic="i-wrench">Pane mecânica</button>
+            <button class="chip" data-type="Pane elétrica" data-ic="i-bolt">Pane elétrica</button>
+            <button class="chip" data-type="Troca de pneu" data-ic="i-tire">Troca de pneu</button>
+            <button class="chip" data-type="Chaveiro 24h" data-ic="i-key">Chaveiro 24h</button>
+            <button class="chip" data-type="Pane seca" data-ic="i-drop">Pane seca</button>
+            <button class="chip" data-type="Acidente" data-ic="i-alert">Acidente</button>
+          </div>
+          <div class="card-soft">
+            <div class="row"><svg class="ic"><use href="#i-car"/></svg><div class="row-tx"><strong>Volkswagen T-Cross • ABC1D23</strong><small>Veículo protegido</small></div></div>
+            <div class="row"><svg class="ic"><use href="#i-pin"/></svg><div class="row-tx"><strong>Av. Eng. Santana Júnior, 3000</strong><small>Fortaleza • CE</small></div></div>
+            <div class="row"><svg class="ic"><use href="#i-clock"/></svg><div class="row-tx"><strong>Chegada estimada: 25–35 min</strong><small>Prestador mais próximo</small></div></div>
+          </div>
+          <button class="btn-primary" id="btn-confirm-assist">Confirmar solicitação</button>
+          <button class="btn-ghost" data-close>Voltar</button>
+        </div>
+      </div>
+
+      <!-- ============ SHEET: PIX ============ -->
+      <div class="sheet" id="sheet-pix">
+        <div class="sheet-card">
+          <span class="grab"></span>
+          <h3>Pagar com PIX</h3>
+          <p class="sheet-sub">Setembro/2026 • <strong>R$ 280,00</strong></p>
+          <div class="qr-box"><svg id="qr"></svg></div>
+          <div class="pix-code">00020126580014BR.GOV.BCB.PIX0136sgroup-demo-2f8a-4c1b-9e7d-mockpay5204000053039865406280.005802BR5911SGROUP DEMO6009FORTALEZA62070503***6304A1B2</div>
+          <button class="btn-primary" id="btn-copy-pix"><svg class="bic"><use href="#i-copy"/></svg>Copiar código PIX</button>
+          <p class="hint center">Ambiente de demonstração — nenhuma cobrança será realizada.</p>
+        </div>
+      </div>
+
+      <!-- ============ SHEET: EVENTO REGISTRADO ============ -->
+      <div class="sheet" id="sheet-event-success">
+        <div class="sheet-card success">
+          <span class="ok-anim"><svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="24" fill="none"/><path fill="none" d="M14 27l8 8 16-16"/></svg></span>
+          <h3>Evento registrado!</h3>
+          <p class="sheet-sub">Protocolo <strong id="ev-protocol">#7913-2026</strong><br>Nossa equipe entrará em contato em até 24h úteis.</p>
+          <button class="btn-primary" id="btn-ev-done">Voltar ao início</button>
+        </div>
+      </div>
+
+      <!-- ============ MODAL: CANCELAR ============ -->
+      <div class="sheet center" id="modal-cancel">
+        <div class="modal-card">
+          <span class="modal-ic danger"><svg class="ic"><use href="#i-alert"/></svg></span>
+          <h3>Cancelar solicitação?</h3>
+          <p>O prestador já foi acionado. Deseja realmente cancelar o atendimento?</p>
+          <button class="btn-danger" id="btn-cancel-confirm">Sim, cancelar</button>
+          <button class="btn-ghost" data-close>Manter atendimento</button>
+        </div>
+      </div>
+
+      <!-- ============ MODAL: SAIR ============ -->
+      <div class="sheet center" id="modal-logout">
+        <div class="modal-card">
+          <span class="modal-ic danger"><svg class="ic"><use href="#i-out"/></svg></span>
+          <h3>Sair da conta?</h3>
+          <p>Você precisará fazer login novamente para acessar sua proteção.</p>
+          <button class="btn-danger" id="btn-logout-confirm">Sair</button>
+          <button class="btn-ghost" data-close>Cancelar</button>
+        </div>
+      </div>
+
+      <!-- ============ LOGIN ============ -->
+      <div class="login" id="screen-login">
+        <div class="login-glow"></div>
+        <button class="icon-btn login-back" id="btn-login-back" aria-label="Voltar"><svg class="ic"><use href="#i-back"/></svg></button>
+        <div class="login-brand">
+          <img src="img/logo.png" alt="Sgroup" class="login-logo">
+          <strong>Sgroup</strong>
+          <span>PROTEÇÃO VEICULAR MUTUALISTA</span>
+        </div>
+        <form class="login-card" id="login-form" autocomplete="off">
+          <h3>Bem-vindo de volta!</h3>
+          <p>Acesse sua conta para continuar.</p>
+          <label class="input">
+            <svg class="ic"><use href="#i-mail"/></svg>
+            <input type="email" id="login-email" value="joao.silva@email.com" placeholder="E-mail" required>
+          </label>
+          <label class="input">
+            <svg class="ic"><use href="#i-lock"/></svg>
+            <input type="password" id="login-pass" value="1234" placeholder="Senha" required>
+          </label>
+          <div class="login-aux">
+            <label class="remember"><input type="checkbox" checked><i></i>Lembrar de mim</label>
+            <button type="button" class="link" data-toast="Recuperação de senha (demonstração)">Esqueci minha senha</button>
+          </div>
+          <button class="btn-primary" type="submit" id="btn-login">Entrar</button>
+          <p class="login-foot">Novo por aqui? <button type="button" class="link" data-toast="Cadastro de associado (demonstração)">Criar conta</button></p>
+        </form>
+        <p class="login-version">Versão 2.4.1 — mockup de demonstração</p>
+      </div>
+
+      <!-- ============ BOAS-VINDAS ============ -->
+      <div class="welcome" id="screen-welcome">
+        <div class="w-photo"></div>
+        <div class="w-brand">
+          <img src="img/logo.png" alt="Sgroup">
+          <div><strong>Sgroup</strong><span>PROTEÇÃO VEICULAR MUTUALISTA</span></div>
+        </div>
+        <div class="w-bottom">
+          <h1>Você não precisa<br><em>enfrentar tudo sozinho</em></h1>
+          <p>Com a <strong>Sgroup</strong>, você entra para uma rede de proteção patrimonial mutualista e assistência.</p>
+          <div class="w-actions">
+            <p class="w-q">Você é associado?</p>
+            <button class="btn-primary" id="btn-welcome-login">Fazer login</button>
+            <p class="w-q">Não é associado e deseja contratar?</p>
+            <button class="btn-white" id="btn-welcome-quote">Falar com um consultor</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ COTAÇÃO POR PLACA ============ -->
+      <div class="ovl" id="screen-quote">
+        <header class="appbar has-back">
+          <button class="icon-btn" id="btn-quote-back" aria-label="Voltar"><svg class="ic"><use href="#i-back"/></svg></button>
+          <h3>Cotação de proteção</h3>
+        </header>
+        <div class="ovl-body">
+          <div class="card q-card">
+            <h3>Informe sua placa</h3>
+            <p class="q-sub">Vamos buscar as informações do seu veículo direto na tabela FIPE.</p>
+            <div class="plate-box">
+              <input id="q-plate" maxlength="7" value="ABC1D23" placeholder="ABC1D23" autocomplete="off" spellcheck="false">
+              <button class="btn-primary slim" id="btn-plate-go">Ir ›</button>
+            </div>
+          </div>
+          <div class="q-loading" id="q-loading" hidden><span class="spinner blue"></span>Consultando tabela FIPE…</div>
+          <div id="q-result" hidden>
+            <div class="card q-vehicle">
+              <img src="img/tcross.png" alt="Volkswagen T-Cross">
+              <div class="q-plate-tag"><span class="plate" id="q-plate-out">ABC1D23</span><span class="pill pill-green"><svg class="ic-xs"><use href="#i-check-mini"/></svg>Encontrado</span></div>
+              <div class="list-kv">
+                <div class="kv"><span>Marca</span><strong>Volkswagen</strong></div>
+                <div class="kv"><span>Modelo</span><strong>T-Cross 200 TSI</strong></div>
+                <div class="kv"><span>Fabricante</span><strong>Volkswagen do Brasil</strong></div>
+                <div class="kv"><span>Ano / Modelo</span><strong>2023 / 2024</strong></div>
+                <div class="kv"><span>Código FIPE</span><strong>005510-7</strong></div>
+                <div class="kv"><span>Valor FIPE</span><strong class="hi">R$ 128.459,00</strong></div>
+              </div>
+            </div>
+            <div class="card">
+              <h4 class="q-h4">Como deseja ser chamado?</h4>
+              <label class="input light"><svg class="ic"><use href="#i-user"/></svg><input id="q-name" placeholder="Seu nome" autocomplete="off"></label>
+              <h4 class="q-h4">CPF</h4>
+              <label class="input light"><svg class="ic"><use href="#i-doc"/></svg><input id="q-cpf" placeholder="000.000.000-00" inputmode="numeric" maxlength="14" autocomplete="off"></label>
+            </div>
+            <button class="btn-primary" id="btn-quote-go">Falar com consultor</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ CHAT COM CONSULTORA ============ -->
+      <div class="ovl chat" id="screen-chat">
+        <header class="appbar has-back chat-bar">
+          <button class="icon-btn" id="btn-chat-back" aria-label="Voltar"><svg class="ic"><use href="#i-back"/></svg></button>
+          <span class="avatar sm jl">JL</span>
+          <div class="chat-who"><strong>Jéssica Leão</strong><small>Consultora Sgroup • online</small></div>
+        </header>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-input">
+          <input id="chat-text" placeholder="Escreva uma mensagem…" autocomplete="off">
+          <button class="chat-send" id="btn-chat-send" aria-label="Enviar"><svg class="bic"><use href="#i-nav"/></svg></button>
+        </div>
+      </div>
+
+      <div id="headsup"></div>
+      <div id="toast" role="status"></div>
+
+    </div><!-- /.app -->
+  </div><!-- /.device -->
+
+  <aside class="push-demo">
+    <div class="composer">
+      <div class="composer-head">
+        <img src="img/logo.png" alt="Sgroup">
+        <div><strong>Central de push</strong><span>Envie uma notificação de teste</span></div>
+      </div>
+      <label class="c-label" for="push-title">Título</label>
+      <input class="c-input" id="push-title" maxlength="48" value="🎁 Indique e ganhe R$ 50!" placeholder="Título da notificação">
+      <label class="c-label" for="push-msg">Mensagem</label>
+      <textarea class="c-input c-area" id="push-msg" rows="4" maxlength="180" placeholder="Escreva a mensagem…">João, convide um amigo para a Sgroup e ganhe R$ 50 de desconto na sua próxima contribuição.</textarea>
+      <button class="c-send" id="btn-push"><svg class="bic"><use href="#i-nav"/></svg>Enviar push</button>
+      <p class="push-note">A notificação aparece no celular e no painel ao lado.</p>
+    </div>
+  </aside>
+</div><!-- /.stage -->
+
+<!-- ============ SPRITE DE ÍCONES ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="lgShield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4C8DFF"/><stop offset="1" stop-color="#1D4ED8"/>
+    </linearGradient>
+  </defs>
+
+  <symbol id="logo-shield" viewBox="0 0 48 48">
+    <path d="M24 3.5l17 6.3v12.4c0 10.9-7 18.3-17 22.8-10-4.5-17-11.9-17-22.8V9.8z" fill="url(#lgShield)"/>
+    <path d="M24 8.2l12.6 4.7v9.5c0 8.2-5.2 13.9-12.6 17.5-7.4-3.6-12.6-9.3-12.6-17.5v-9.5z" fill="rgba(7,22,50,.22)"/>
+    <path d="M16.5 24.5l5.2 5.2L32 19" fill="none" stroke="#fff" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+
+  <symbol id="art-car" viewBox="0 0 340 150">
+    <ellipse cx="172" cy="134" rx="126" ry="9" fill="#04122B" opacity=".3"/>
+    <rect x="36" y="96" width="272" height="18" rx="9" fill="#1B2C4E"/>
+    <path d="M32 104 C24 104 20 97 20 90 C20 80 27 74 40 70 L64 64 C84 44 114 34 152 32 L198 32 C234 34 260 46 278 64 L302 70 C314 74 320 81 320 91 C320 99 315 104 307 104 Z" fill="#EDF2F9" stroke="#C9D6EA" stroke-width="2"/>
+    <path d="M98 62 C113 48 132 42 152 41 L152 62 Z" fill="#9FC0EC"/>
+    <path d="M160 41 L196 41 C217 43 234 50 248 61 L160 61 Z" fill="#9FC0EC"/>
+    <path d="M156 41 L156 96" stroke="#D5DFEE" stroke-width="2"/>
+    <rect x="163" y="72" width="15" height="4.5" rx="2.2" fill="#C2CFE2"/>
+    <rect x="132" y="72" width="15" height="4.5" rx="2.2" fill="#C2CFE2"/>
+    <rect x="299" y="76" width="17" height="8" rx="4" fill="#FFD98A"/>
+    <rect x="22" y="78" width="13" height="7" rx="3.5" fill="#F87F7F"/>
+    <path d="M104 36 L196 36" stroke="#C9D6EA" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="94" cy="104" r="26" fill="#1B2C4E"/><circle cx="250" cy="104" r="26" fill="#1B2C4E"/>
+    <circle cx="94" cy="104" r="19" fill="#0E1B33"/><circle cx="250" cy="104" r="19" fill="#0E1B33"/>
+    <circle cx="94" cy="104" r="10.5" fill="#DCE5F2"/><circle cx="250" cy="104" r="10.5" fill="#DCE5F2"/>
+    <circle cx="94" cy="104" r="4" fill="#0E1B33"/><circle cx="250" cy="104" r="4" fill="#0E1B33"/>
+  </symbol>
+
+  <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></g></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 16.5v-3A2.5 2.5 0 0 1 5.5 11h13a2.5 2.5 0 0 1 2.5 2.5v3"/><path d="M6 11l1.7-3.6A2 2 0 0 1 9.5 6.2h5a2 2 0 0 1 1.8 1.2L18 11"/><circle cx="7.3" cy="16.5" r="1.9"/><circle cx="16.7" cy="16.5" r="1.9"/></g></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></g></symbol>
+  <symbol id="i-dollar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20"/><path d="M17 5.5H9.5a3.25 3.25 0 0 0 0 6.5h5a3.25 3.25 0 0 1 0 6.5H6"/></g></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></g></symbol>
+  <symbol id="i-bell" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></g></symbol>
+  <symbol id="i-chev" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></g></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></g></symbol>
+  <symbol id="i-tow" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4h15v12H1z"/><path d="M16 9h4l3 3v4h-7z"/><circle cx="5.5" cy="18.8" r="2.2"/><circle cx="18.5" cy="18.8" r="2.2"/></g></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></g></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></g></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.78 7.78 5.5 5.5 0 0 1 7.78-7.78zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></g></symbol>
+  <symbol id="i-tire" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.4"/><path d="M12 3v5.6M12 15.4V21M3 12h5.6M15.4 12H21"/></g></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7l5.7 5.7a8 8 0 1 1-11.4 0z"/></g></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4"/><path d="M12 17h.01"/></g></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></g></symbol>
+  <symbol id="i-clip" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></g></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></g></symbol>
+  <symbol id="i-check-mini" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></g></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></g></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></g></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><g fill="currentColor" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14l-5-4.87 6.91-1.01z"/></g></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></g></symbol>
+  <symbol id="i-nav" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8z"/></g></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></g></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></g></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></g></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></g></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="M16 17l5-5-5-5"/><path d="M21 12H9"/></g></symbol>
+  <symbol id="i-gift" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v10H4V12"/><path d="M2 7h20v5H2z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></g></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></g></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></g></symbol>
+  <symbol id="i-fire" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></g></symbol>
+  <symbol id="i-storm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 16.9A5 5 0 0 0 18 7h-1.26a8 8 0 1 0-11.62 9"/><path d="M13 11l-4 6h6l-4 6"/></g></symbol>
+  <symbol id="i-dots" viewBox="0 0 24 24"><g fill="currentColor"><circle cx="5" cy="12" r="1.7"/><circle cx="12" cy="12" r="1.7"/><circle cx="19" cy="12" r="1.7"/></g></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></g></symbol>
+  <symbol id="i-pix" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.6l9.4 9.4-9.4 9.4-9.4-9.4z"/><path d="M12 8.2l3.8 3.8-3.8 3.8-3.8-3.8z"/></g></symbol>
+  <symbol id="i-cardpay" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><path d="M1 10h22"/></g></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></g></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10"/><path d="M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></g></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></g></symbol>
+  <symbol id="i-vw" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="24" r="20.5"/><path d="M16.5 10.5L24 27l7.5-16.5"/><path d="M8.5 17.5L17 39l7-15 7 15 8.5-21.5"/></g></symbol>
+</svg>
+
+<script src="js/app.js"></script>
+</body>
+</html>
